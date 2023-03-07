@@ -6,7 +6,7 @@ import linkedin from "./images/linkedin.svg";
 
 function App() {
   return (
-    <div className="flex flex-col m-8 space-y-8 width-full ">
+    <div className="flex flex-col m-8 space-y-4 width-full ">
       <div className="flex flex-col self-center p-8 space-y-8 bg-white shadow-2xl w-80 rounded-3xl">
         <p className="text-4xl font-bold">Hi 👋</p>
         <p className="w-64 h-16 text-sm">
