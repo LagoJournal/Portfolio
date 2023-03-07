@@ -84,8 +84,16 @@ function App() {
           Database creation & managment.
         </p>
         <div className="flex items-center justify-between w-full space-x-40 ">
-          <img className="h-full rotate-180 rounded-lg " src={arrow} />
-          <img className="h-full transform rounded-lg " src={arrow} />
+          <img
+            className="h-full rotate-180 rounded-lg "
+            src={arrow}
+            alt="arrow left"
+          />
+          <img
+            className="h-full transform rounded-lg "
+            src={arrow}
+            alt="arrow right"
+          />
         </div>
       </div>
       <div className="flex flex-col items-center self-center justify-start p-8 space-y-5 bg-white shadow-2xl w-80 rounded-3xl">
