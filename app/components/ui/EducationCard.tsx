@@ -25,9 +25,7 @@ export const EducationCard: FC<Props> = ({ education }) => {
 
       <p className="text-center ">{education[current].title}</p>
       {education[current].text.map((e) => (
-        <p className="" key={e}>
-          {e}
-        </p>
+        <p key={education[current].text.indexOf(e)}>{e}</p>
       ))}
       <div className="flex justify-between w-full">
         <Image
