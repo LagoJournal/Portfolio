@@ -11,7 +11,7 @@ import {
 
 export const CardsGrid: React.FC = () => {
   return (
-    <div className="w-full grid grid-cols-1 gap-4 place-items-center py-4">
+    <div className="grid w-full grid-cols-1 gap-4 py-4 place-items-center">
       <HiCard />
       <NameCard />
       <MeCard />
