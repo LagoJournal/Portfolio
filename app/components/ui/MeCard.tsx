@@ -1,15 +1,24 @@
 import Image from "next/image";
 import { FC } from "react";
+import { motion } from "framer-motion";
 import photo from "../../utils/images/portrait.png";
 
 export const MeCard: FC = () => {
   return (
-    <div className=" w-80 bg-main rounded-3xl shadow-2xl">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 100 }}
+      transition={{
+        ease: "easeIn",
+        duration: 1,
+      }}
+      className="shadow-2xl bg-main rounded-3xl md:row-span-3 xl:order-first"
+    >
       <Image
         src={photo}
-        className="w-80 h-64 rounded-tl-3xl rounded-tr-3xl absolute"
+        className="absolute h-64 w-card rounded-tl-3xl rounded-tr-3xl"
       />
-      <div className="p-8 space-y-4 w-full text-white ">
+      <div className="w-full p-8 space-y-4 text-white ">
         <p className="text-4xl font-bold ">About me</p>
         <p>
           Web Development allowed me to find an optimal balance between two very
@@ -22,6 +31,6 @@ export const MeCard: FC = () => {
           technologies along the way.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };

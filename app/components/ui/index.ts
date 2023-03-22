@@ -5,3 +5,4 @@ export * from "./MeCard";
 export * from "./ProjectCard";
 export * from "./EducationCard";
 export * from "./KnowledgeCard";
+export * from "./ContactCard";

@@ -19,3 +19,5 @@ export * as nodemon from "../../utils/images/nodemon.svg";
 export * as git from "../../utils/images/git.svg";
 export * as npm from "../../utils/images/npm.svg";
 export * as github from "../../utils/images/github.svg";
+export * as linkedin from "../../utils/images/linkedin.svg";
+export * as mail from "../../utils/images/mail.svg";

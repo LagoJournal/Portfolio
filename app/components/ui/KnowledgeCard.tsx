@@ -26,7 +26,7 @@ import {
 
 export const KnowledgeCard: FC = () => {
   return (
-    <div className="inline-flex flex-col items-center justify-start p-8 space-y-5 bg-white w-80 rounded-3xl">
+    <div className="flex flex-col items-center justify-start p-8 space-y-5 bg-white shadow-2xl rounded-3xl md:row-start-2 md:col-start-2 md:row-span-3">
       <p className="text-4xl font-bold">Knowledge</p>
       <div className="space-y-4">
         <p className="w-full font-bold text-center">Languages</p>

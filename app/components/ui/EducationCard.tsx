@@ -20,7 +20,7 @@ export const EducationCard: FC<Props> = ({ education }) => {
   };
 
   return (
-    <div className="flex flex-col items-center p-8 space-y-4 text-white shadow-2xl w-80 bg-main rounded-3xl">
+    <div className="flex flex-col items-center justify-between p-8 space-y-4 text-white shadow-2xl bg-main rounded-3xl min-h-edu md:col-span-2 md:row-start-5">
       <p className="text-4xl font-bold ">Education</p>
 
       <p className="text-center ">{education[current].title}</p>
