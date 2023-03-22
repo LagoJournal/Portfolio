@@ -20,14 +20,16 @@ export const EducationCard: FC<Props> = ({ education }) => {
   };
 
   return (
-    <div className="flex flex-col space-y-4 items-center w-80 p-8 bg-main rounded-3xl shadow-2xl text-white">
+    <div className="flex flex-col items-center p-8 space-y-4 text-white shadow-2xl w-80 bg-main rounded-3xl">
       <p className="text-4xl font-bold ">Education</p>
 
       <p className="text-center ">{education[current].title}</p>
       {education[current].text.map((e) => (
-        <p className="">{e}</p>
+        <p className="" key={e}>
+          {e}
+        </p>
       ))}
-      <div className="w-full flex justify-between">
+      <div className="flex justify-between w-full">
         <Image
           src={arrow}
           className="rotate-180 cursor-pointer"
